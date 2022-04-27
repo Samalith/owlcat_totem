@@ -1,15 +1,16 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
+import Vue from 'vue';
+import Vuex from 'vuex';
+import { bcComm } from './modules/bcComm';
+import { owlCatDesign } from './modules/owlCatDesign';
+import { owlCatTotem } from './modules/owlCatTotem';
 
-Vue.use(Vuex)
+Vue.use(Vuex);
 
 export default new Vuex.Store({
-  state: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
   modules: {
+    bcComm,
+    owlCatDesign,
+    owlCatTotem
   }
-})
+});
+
