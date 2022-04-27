@@ -15,7 +15,7 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: `@import "./src/scss/assets/vendors/bootstrap-vue/index.scss";`
+        additionalData: `@import "./src/scss/variables";`
       },
     },
   },
