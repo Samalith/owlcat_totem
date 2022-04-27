@@ -53,7 +53,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "~@/assets/scss/vendors/bootstrap-vue/index";
+@import "@/scss/variables";
 @import "@/styles/base.scss";
 
 #app {
