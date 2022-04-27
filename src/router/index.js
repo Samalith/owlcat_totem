@@ -17,12 +17,12 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "marketplace" */'../views/Marketplace.vue')
+    component: () => import('../views/Marketplace.vue')
   },
   {
     path: '/catalogue',
     name: 'Catalogue',
-    component: () => import(/* webpackChunkName: "catalogue" */'../views/Catalogue.vue'),
+    component: () => import('../views/Catalogue.vue'),
     //children: [
       //{
         //path: 'breed',
@@ -34,12 +34,12 @@ const routes = [
   {
     path: '/factory',
     name: 'Factory',
-    component: () => import(/* webpackChunkName: "factory" */'../views/Factory.vue')
+    component: () => import('../views/Factory.vue')
   },
   {
     path: '/breed',
     name: 'Breed',
-    component: () => import(/* webpackChunkName: "breed" */'../views/Breed.vue')
+    component: () => import('../views/Breed.vue')
   },
   // catchall 404
   {
@@ -50,6 +50,8 @@ const routes = [
 ]
 
 const router = new VueRouter({
+  mode: 'history',
+  base: import.meta.env.BASE_URL,
   routes
 })
 
