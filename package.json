@@ -7,11 +7,9 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.11.5",
     "@metamask/detect-provider": "^1.2.0",
     "bootstrap": "^4.5.2",
     "bootstrap-vue": "^2.17.3",
-    "core-js": "^3.6.5",
     "mutationobserver-shim": "^0.3.7",
     "popper.js": "^1.16.1",
     "portal-vue": "^2.1.7",
@@ -24,7 +22,7 @@
   },
   "devDependencies": {
     "node-sass": "^4.12.0",
-    "sass": "^1.26.11",
+    "sass": "~1.32.13",
     "vite": "^2.9.6",
     "vite-plugin-vue2": "^2.0.0",
     "vue-cli-plugin-bootstrap-vue": "~0.8.2"
