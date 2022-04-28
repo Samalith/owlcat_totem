@@ -65,7 +65,9 @@
 //====================================================
 //===================BOOTSTRAP-VUE====================
 //====================================================
-
+//@import '~/bootstrap-vue/scss/functions';
+//@import '~/bootstrap-vue/scss/variables';
+//@import '~/bootstrap-vue/scss/mixins';
 // @import "~bootstrap-vue/src/variables";
 //======================= BASE =======================
 @import "~bootstrap-vue/src/utilities";

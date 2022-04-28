@@ -210,13 +210,22 @@
 </template>
 
 <script>
+import owlcatColor from '@/components/OwlCatColor.vue';
+import owlcatDna from '@/components/OwlCatDNA.vue';
+import owlcatButtons from '@/components/ButtonsOwlCat.vue';
+import bcButtons from '@/components/ButtonsBC.vue';
+
 export default {
   name: 'owlcat-image',
   components: {
-    'owlcat-color': require('@/components/OwlCatColor.vue').default,
-    'owlcat-dna': require('@/components/OwlCatDNA.vue').default,
-    'owlcat-buttons': require('@/components/ButtonsOwlCat.vue').default,
-    'bc-buttons': require('@/components/ButtonsBC.vue').default
+    'owlcat-color': owlcatColor,
+    'owlcat-dna': owlcatDna,
+    'owlcat-buttons': owlcatButtons,
+    'bc-buttons': bcButtons
+    //'owlcat-color': require('@/components/OwlCatColor.vue').default,
+    //'owlcat-dna': require('@/components/OwlCatDNA.vue').default,
+    //'owlcat-buttons': require('@/components/ButtonsOwlCat.vue').default,
+    //'bc-buttons': require('@/components/ButtonsBC.vue').default
   }
 }
 </script>

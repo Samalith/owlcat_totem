@@ -53,7 +53,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "@/scss/variables";
+@import "@/scss/app.scss";
 @import "@/styles/base.scss";
 
 #app {

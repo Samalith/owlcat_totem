@@ -237,6 +237,7 @@
 
 <script>
 import VueNumericInput from 'vue-numeric-input';
+import pageButtons from '@/components/ButtonsPage.vue';
 
 export default {
   name:'owlcat-color',
@@ -316,7 +317,8 @@ export default {
   },
   components:{
     VueNumericInput,
-    'page-buttons': require('@/components/ButtonsPage.vue').default
+    'page-buttons': pageButtons
+    //'page-buttons': require('@/components/ButtonsPage.vue').default
   }
 }
 </script>
