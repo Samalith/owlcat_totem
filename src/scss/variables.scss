@@ -40,6 +40,12 @@ $dark:          $gray-800 !default;
 
 $theme-colors: () !default;
 
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+$navbar-dark-color: rgba($white, .7);
+
 // Set a specific jump point for requesting color jumps
 $theme-color-interval:      8% !default;
 
