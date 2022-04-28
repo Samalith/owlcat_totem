@@ -19,7 +19,7 @@
     "vue-numeric-input": "^2.0.0",
     "vue-router": "^3.5.3",
     "vuex": "^3.4.0",
-    "web3": "^1.6.1"
+    "web3": "^1.7.3"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^4.1.3",

@@ -1,8 +1,9 @@
 import detectEthereumProvider from '@metamask/detect-provider';
 import contractObject from '@/contracts/OwlCatContract.json';
 import contractMarket from '@/contracts/OwlCatMarketPlace.json';
+import Web3 from 'web3/dist/web3.min.js';
 
-var Web3 = require('web3');
+//var Web3 = require('web3');
 var web3 = new Web3(Web3.givenProvider);
 
 export const bcComm = {
