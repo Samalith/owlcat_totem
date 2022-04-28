@@ -40,6 +40,10 @@
 </template>
 
 <script>
+import marketCard from '@/components/MarketplaceComps/MarketCard.vue';
+import owlcatMarket from '@/components/MarketplaceComps/OwlCatMarket.vue';
+import buyPage from '@/components/MarketplaceComps/BuyPage.vue';
+
 export default {
   name:'Marketplace',
   data(){
@@ -170,9 +174,12 @@ export default {
     },
   },
   components:{
-    'market-card': require('@/components/MarketplaceComps/MarketCard.vue').default,//
-    'owlcat-market': require('@/components/MarketplaceComps/OwlCatMarket.vue').default,
-    'buy-page': require('@/components/MarketplaceComps/BuyPage.vue').default
+    'market-card': marketCard,
+    'owlcat-market': owlcatMarket,
+    'buy-page': buyPage
+    //'market-card': require('@/components/MarketplaceComps/MarketCard.vue').default,//
+    //'owlcat-market': require('@/components/MarketplaceComps/OwlCatMarket.vue').default,
+    //'buy-page': require('@/components/MarketplaceComps/BuyPage.vue').default
   },
   mounted(){
     this.familyMarketplace();

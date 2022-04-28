@@ -48,6 +48,10 @@
 </template>
 
 <script>
+import owlcatItem from '@/components/CatalogueComps/OwlCatItem.vue';
+import marketItem from '@/components/MarketplaceComps/MarketItem.vue';
+import orderPage from '@/components/CatalogueComps/OrderPage.vue';
+
 export default {
   name:'Catalogue',
   data(){
@@ -175,9 +179,12 @@ export default {
     },
   },
   components:{
-    'owlcat-item': require('@/components/CatalogueComps/OwlCatItem.vue').default,
-    'market-item': require('@/components/MarketplaceComps/MarketItem.vue').default,
-    'order-page': require('@/components/CatalogueComps/OrderPage.vue').default
+    'owlcat-item': owlcatItem,
+    'market-item': marketItem,
+    'order-page': orderPage
+    //'owlcat-item': require('@/components/CatalogueComps/OwlCatItem.vue').default,
+    //'market-item': require('@/components/MarketplaceComps/MarketItem.vue').default,
+    //'order-page': require('@/components/CatalogueComps/OrderPage.vue').default
   },
   mounted(){    
     this.familyCatalogue();

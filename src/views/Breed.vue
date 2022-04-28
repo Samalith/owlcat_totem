@@ -601,6 +601,8 @@
 </template>
 
 <script>
+import popupWindow from '@/components/CatalogueComps/PopupWindow.vue';
+
 export default {
   name:'Breed',
   data(){
@@ -751,7 +753,8 @@ export default {
     }
   },
   components: {
-    'popup-window':require('@/components/CatalogueComps/PopupWindow.vue').default
+    'popup-window': popupWindow
+    //'popup-window':require('@/components/CatalogueComps/PopupWindow.vue').default
   }
 }
 </script>
