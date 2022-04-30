@@ -374,7 +374,7 @@ export const bcComm = {
       state.contract.marketInstance.methods.setOffer(weiPrice, tokenId).send({})
       .then((receipt) => {
         commit('SET_OFFER', receipt);
-        location.reload();
+        window.location.reload(true);
       })
       .catch((err) => {
         console.log('Set offer error: ', err);
@@ -398,7 +398,7 @@ export const bcComm = {
       })
       .then(() => {
         console.log('Cancel Order label');
-        location.reload();
+        window.location.reload(true);
       })
       .catch((err) => {
         console.log('Set offer error: ', err);
@@ -411,7 +411,7 @@ export const bcComm = {
       })
       .then(() => {
         console.log('Purchase totem label');
-        location.reload();
+        window.location.reload(true);
       })
       .catch((err) => {
         console.log('Set offer error: ', err);

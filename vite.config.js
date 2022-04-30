@@ -3,8 +3,9 @@ import { createVuePlugin as vue } from 'vite-plugin-vue2';
 
 const path = require('path');
 
+//https://vitejs.dev/config/
 export default defineConfig({
-  //https://vitejs.dev/config/
+  base: '/owlcat_totem/',
   plugins: [vue()],
   resolve: {
     alias: {
@@ -18,5 +19,17 @@ export default defineConfig({
         additionalData: `@import "./src/scss/variables";`
       },
     },
+  },
+  build: {
+    chunkSizeWarningLimit: 2000, // limit chunk size
+    rollupOptions: { // manual rollup
+      output: {
+        manualChunks(id) {
+          if (id.includes('node_modules')) {
+            return 'vendor';
+          }
+        }
+      }
+    }
   },
 })
