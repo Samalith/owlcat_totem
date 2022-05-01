@@ -1,6 +1,7 @@
 import detectEthereumProvider from '@metamask/detect-provider';
 import contractObject from '@/contracts/OwlCatContract.json';
 import contractMarket from '@/contracts/OwlCatMarketPlace.json';
+import router from '@/router';
 import Web3 from 'web3/dist/web3.min.js';
 
 //var Web3 = require('web3');
@@ -374,7 +375,8 @@ export const bcComm = {
       state.contract.marketInstance.methods.setOffer(weiPrice, tokenId).send({})
       .then((receipt) => {
         commit('SET_OFFER', receipt);
-        window.location.reload(true);
+        router.push({ name: 'Home'});
+        location.reload();
       })
       .catch((err) => {
         console.log('Set offer error: ', err);
@@ -398,7 +400,8 @@ export const bcComm = {
       })
       .then(() => {
         console.log('Cancel Order label');
-        window.location.reload(true);
+        router.push({ name: 'Home'});
+        location.reload();
       })
       .catch((err) => {
         console.log('Set offer error: ', err);
@@ -411,7 +414,8 @@ export const bcComm = {
       })
       .then(() => {
         console.log('Purchase totem label');
-        window.location.reload(true);
+        router.push({ name: 'Home'});
+        location.reload();
       })
       .catch((err) => {
         console.log('Set offer error: ', err);

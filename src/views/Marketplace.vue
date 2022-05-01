@@ -83,6 +83,7 @@ export default {
       
     },
     familyMarketplace(){
+      this.itemsMarkeplace = [];
       if(this.$store.getters['bcComm/getConnectionStatus']){
         this.$store.dispatch('bcComm/initMarketplace');
         if(this.$store.getters['bcComm/getIsOrdered']){ // Init Market ok
@@ -115,6 +116,7 @@ export default {
       }
     },
     updateMarketplace(_arrayItemsMarket){
+      this.itemsMarkeplace = [];
       if(this.$store.getters['bcComm/getConnectionStatus'])   
         var _itemsFamily = _arrayItemsMarket.length;
         for(let i = 0; i < _itemsFamily; i++){ 

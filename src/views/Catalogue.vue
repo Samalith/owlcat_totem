@@ -76,6 +76,7 @@ export default {
       this.$router.push({ name: 'Breed'});
     },
     updateCatalogue(_arrayItems){
+      this.catalogueState = [];
       if(this.$store.getters['bcComm/getConnectionStatus'])
         if(this.$store.getters['bcComm/getStockStatus']){   
           var _itemsFamily = _arrayItems.length;
@@ -110,6 +111,7 @@ export default {
         }
     },
     familyCatalogue(){ 
+      this.catalogueState = [];
       if(this.$store.getters['bcComm/getConnectionStatus']){
         this.$store.dispatch('bcComm/totalSupply')        
         .then(() => {
