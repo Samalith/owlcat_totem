@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "vite --port 8000",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "deploy": "cd dist && cp index.html 404.html"
   },
   "dependencies": {
     "@metamask/detect-provider": "^1.2.0",

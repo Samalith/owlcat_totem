@@ -210,6 +210,7 @@ export const bcComm = {
       .catch((err) => {
         alert('Owlcat not created ! If the problem persists reset your Metamask account.');
         console.log(err);
+        router.push({ name: 'Home'});
         location.reload();
       });
     },
@@ -222,6 +223,7 @@ export const bcComm = {
         .catch((err) => {
           rej(alert('Owlcat not created ! If the problem persists reset your Metamask account.'));
           console.log(err);
+          router.push({ name: 'Home'});
           location.reload();
         });
       });
