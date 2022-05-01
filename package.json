@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "vite --port 8000",
+    "dev": "vite --port 8080",
     "build": "vite build",
     "serve": "vite preview",
     "deploy": "cd dist && cp index.html 404.html"
