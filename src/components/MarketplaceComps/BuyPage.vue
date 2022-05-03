@@ -43,7 +43,7 @@ export default {
     top: 185px;
     left: 88px;
     /* right: 474px; */
-    bottom: 89px;
+    //bottom: 89px;
     z-index: 99;
     background-color: #5957bb;
     /* opacity: 0.5; */

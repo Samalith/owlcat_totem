@@ -52,7 +52,7 @@ const routes = [
 const router = new VueRouter({
   mode: 'history',
   //base: import.meta.env.BASE_URL,
-  base: '/owlcat_totem/',
+  base: '/owlcat_totem/',  // to keep the original path in GitHub pages
   routes
 })
 
